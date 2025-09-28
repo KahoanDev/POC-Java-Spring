@@ -1,8 +1,8 @@
-package com.KahoanDev.poc_crud_api.service;
+package com.KahoanDev.poc_crud_api.Service;
 
-import com.KahoanDev.poc_crud_api.Controllers.dto.ProdutoDTO;
 import com.KahoanDev.poc_crud_api.Model.Produto;
 import com.KahoanDev.poc_crud_api.Repository.ProdutoRepository;
+import com.KahoanDev.poc_crud_api.Validator.ProdutoValidator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -14,9 +14,10 @@ import java.util.Optional;
 public class ProdutoService {
 
     private final ProdutoRepository repository;
+    private final ProdutoValidator validator;
 
     public Produto salvar(Produto produto){
-
+        validator.validar(produto);
         return repository.save(produto);
     }
 

@@ -3,7 +3,7 @@ package com.KahoanDev.poc_crud_api.Controllers;
 import com.KahoanDev.poc_crud_api.Controllers.dto.ProdutoDTO;
 import com.KahoanDev.poc_crud_api.Controllers.mappers.ProdutoMapper;
 import com.KahoanDev.poc_crud_api.Model.Produto;
-import com.KahoanDev.poc_crud_api.service.ProdutoService;
+import com.KahoanDev.poc_crud_api.Service.ProdutoService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
