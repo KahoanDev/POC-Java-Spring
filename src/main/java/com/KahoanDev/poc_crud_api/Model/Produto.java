@@ -15,8 +15,10 @@ public class Produto {
 
     @Column(length = 200, nullable = false)
     private String descricao;
-    
+
     @Enumerated(EnumType.STRING)
     @Column(length = 30, nullable = false)
     private TipoProduto tipo;
+
+    private Long quantidade;
 }
