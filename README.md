@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-    <b>CRUD simples de uma API REST de estoque de produtos.</b>
+    <b>CRUD de uma API REST de estoque de produtos.</b>
 </p>
 
 <h2 id="technologies">💻 Tecnologias</h2>
